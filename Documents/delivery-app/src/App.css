@@ -68,6 +68,7 @@
   height: 100%;
   border-radius: 10px;
   padding: 5%;
+  box-shadow: 10px 10px 5px #000;
 }
 .element1-home{
   background-color: aqua;
@@ -170,6 +171,11 @@ h1{
 .login-form, .sign-up-form{
   width: 40%;
   margin: 6% auto;
+}
+
+.btn-primary{
+  background-color: #cebb9e !important;
+  border-color: #cebb9e !important;
 }
 
 
