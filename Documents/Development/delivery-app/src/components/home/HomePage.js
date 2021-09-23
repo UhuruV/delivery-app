@@ -1,5 +1,12 @@
 import React from "react";
-import { Container, Row, Col, InputGroup, FormControl } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  InputGroup,
+  FormControl,
+  Button,
+} from "react-bootstrap";
 
 const HomePage = () => {
   return (
@@ -7,15 +14,23 @@ const HomePage = () => {
       <Row>
         <Col className="banner-col">
           <div className="destination-input">
-            <InputGroup className="mb-3">
-              <InputGroup.Text id="basic-addon1">@</InputGroup.Text>
-              <FormControl
-                placeholder="Enter delivery destination"
-                aria-label="Destination"
-                aria-describedby="basic-addon1"
-              />
-              <InputGroup.Text id="basic-addon1">@</InputGroup.Text>
-            </InputGroup>
+            <Row>
+              <Col xs={6} md={4}>
+                <div className="element1-home">
+                  <h6>Fast Delivery</h6>
+                </div>
+              </Col>
+              <Col xs={6} md={4}>
+              <div className="element2-home">
+                  <h6>Reliable</h6>
+                  </div>
+              </Col>
+              <Col xs={6} md={4}>
+              <div className="element3-home">
+                  <h6>Affordable</h6>
+                  </div>
+              </Col>
+            </Row>
           </div>
         </Col>
       </Row>

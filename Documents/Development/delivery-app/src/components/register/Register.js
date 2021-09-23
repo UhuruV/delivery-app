@@ -1,10 +1,31 @@
 import React from "react";
 import { Form,Row,Col,Button } from "react-bootstrap";
+import { useHistory } from "react-router";
 
 const Register = () => {
+  const history = useHistory();
+
+  const RedirectAfterRegister =()=>{
+    history.push('/login');
+  }
+
+
   return (
     <div className="sign-up-form">
-      <Form>
+      <Form onSubmit={ RedirectAfterRegister }>
+
+      <Row className="mb-3">
+          <Form.Group as={Col} controlId="formGridEmail">
+            <Form.Label>First Name</Form.Label>
+            <Form.Control type="text" placeholder="First Name" />
+          </Form.Group>
+
+          <Form.Group as={Col} controlId="formGridPassword">
+            <Form.Label>Second Name</Form.Label>
+            <Form.Control type="text" placeholder="Second Name" />
+          </Form.Group>
+        </Row>
+
         <Row className="mb-3">
           <Form.Group as={Col} controlId="formGridEmail">
             <Form.Label>Email</Form.Label>
@@ -22,29 +43,26 @@ const Register = () => {
           <Form.Control placeholder="1234 Main St" />
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formGridAddress2">
-          <Form.Label>Address 2</Form.Label>
-          <Form.Control placeholder="Apartment, studio, or floor" />
-        </Form.Group>
 
         <Row className="mb-3">
-          <Form.Group as={Col} controlId="formGridCity">
+          {/* <Form.Group as={Col} controlId="formGridCity">
             <Form.Label>City</Form.Label>
             <Form.Control />
-          </Form.Group>
+          </Form.Group> */}
 
           <Form.Group as={Col} controlId="formGridState">
-            <Form.Label>State</Form.Label>
+            <Form.Label>County</Form.Label>
             <Form.Select defaultValue="Choose...">
               <option>Choose...</option>
-              <option>...</option>
+              <option>Nairobi</option>
+              <option>Mombasa</option>
+              <option>Nakuru</option>
+              <option>Kiambu</option>
+              <option>Machakos</option>
+              <option>Nyeri</option>
             </Form.Select>
           </Form.Group>
         </Row>
-
-        <Form.Group className="mb-3" id="formGridCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
-        </Form.Group>
 
         <Button variant="primary" type="submit">
           Submit

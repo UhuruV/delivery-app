@@ -27,11 +27,11 @@ const NavbarComponent = () => {
       </Navbar>
 
   
-        <Row className="cont">
+        {/* <Row className="cont">
           <Col>
             <div className="deliver-with-us">Delivery within Nairobi at an affordable price!</div>
           </Col>
-        </Row>
+        </Row> */}
 
     </>
   );

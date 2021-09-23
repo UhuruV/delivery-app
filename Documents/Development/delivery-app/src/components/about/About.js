@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col, Image,Button } from "react-bootstrap";
 import image from "./asset/delivery.jpg";
 
 const About = () => {
@@ -10,22 +10,17 @@ const About = () => {
           <Col>
             <div>
               <div className="about-text">
-                <h3>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maxime mollitia, molestiae quas vel sint commodi repudiandae
-                  consequuntur voluptatum
-                </h3>
+                <h1 className="about-heading">DELIVERY AT YOUR DOOR STEP!</h1>
+                <h4>Delivery made easier</h4>
               </div>
             </div>
           </Col>
         </Row>
 
-        <Row className="m-5">
-          <Col xs={6}>
-            <Image src={image} rounded style={{ width: "100%" }} />
-          </Col>
-          <Col xs={6}>
-            <p className="p-5">
+        <Row className="m-5" style={{ textAlign:"left" }}>
+        <Col xs={6}>
+          <h3 className="abt-h3">About US</h3>
+            <p className="p-5" id="para">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               mollitia, molestiae quas vel sint commodi repudiandae consequuntur
               voluptatum laborum numquam blanditiis harum quisquam eius sed odit
@@ -38,28 +33,40 @@ const About = () => {
               laudantium molestias eos sapiente officiis modi at sunt excepturi
               expedita sint?
             </p>
+            <Button variant="warning" type="submit" className="read-more">
+          Read More
+        </Button>
           </Col>
+          <Col xs={6}>
+            <Image src={image} rounded style={{ width: "100%" }} />
+          </Col>
+        
         </Row>
-
-        <Container className="m-5">
-        <Row className="core-values">
-          <Col xs={6} md={5} className="mission-statement mx-3">
-            <h3>Our Mission</h3>
-            <p>
-              Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
-              sapiente officiis modi at sunt excepturi expedita sint?
-            </p>
-          </Col>
-          <Col xs={6} md={5}className="vision-statement mx-3">
-            <h3>Our Vission</h3>
-            <p>
-              Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
-              sapiente officiis modi at sunt excepturi expedita sint?
-            </p>
-          </Col>
-        </Row>
-        </Container>
       </Container>
+
+      <Container>
+          <Row>
+            <Col xs={6} style={{ textAlign: "left" }} className="core-values">
+              <h4>Our Mission </h4>
+              <p>
+                eos Ad eos saepe lucilius, noster postulant philosophia ea usu,
+                postulant philosophia ea usu, qui dicta sadipscing. Ad eos saepe
+                lucilius, noster postulant philosophia ea usu Ad eos saepe
+                lucilius, noster postulant philosophia ea usu, postulant
+                philosophia ea usu, qui dicta sadipscing. Ad eos saepe{" "}
+              </p>
+            </Col>
+            <Col xs={6} style={{ textAlign: "left" }} className="core-values">
+              <h4>Our Vision</h4>
+              <p>
+                eos Ad eos saepe lucilius, noster postulant philosophia ea usu,
+                postulant philosophia ea usu, qui dicta sadipscing. Ad eos saepe
+                lucilius, noster postulant philosophia ea usu Ad eos saepe
+                lucilius, noster post
+              </p>
+            </Col>
+          </Row>
+        </Container>
     </>
   );
 };
