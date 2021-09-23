@@ -173,6 +173,11 @@ h1{
   margin: 6% auto;
 }
 
+.btn-primary{
+  background-color: #cebb9e !important;
+  border-color: #cebb9e !important;
+}
+
 
 
 .App-link {
