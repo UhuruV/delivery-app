@@ -1,10 +1,11 @@
 import React from "react";
-import { Form, Row, Col, Button, Card } from "react-bootstrap";
-import * as sweetalert from 'sweetalert';
+import { Form, Row, Col, Button, Card, FormControl } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import * as sweetalert from "sweetalert";
 import { useHistory } from "react-router";
 
 const DeliveryDetails = () => {
-    const history = useHistory();
+  const history = useHistory();
 
   const onClickContinue = () => {
     sweetalert({
@@ -14,21 +15,22 @@ const DeliveryDetails = () => {
     });
   };
 
-  const RedirectToTracking = ()=>{
-      onClickContinue();
-      history.push('/tracking');
-  }
+  const RedirectToTracking = () => {
+    onClickContinue();
+    history.push("/tracking");
+  };
 
   return (
     <div>
       <div className="sign-up">
         <div className="sign-up-form delivery">
           <Card body>
-            <Form >
+            <Form>
               <Row className="mb-5">
                 <Form.Group as={Col} controlId="formGridEmail">
+                  <FormControl.Text></FormControl.Text>
                   <Form.Control
-                    type="email"
+                    type="text"
                     placeholder="Enter pick up location"
                   />
                 </Form.Group>
@@ -37,25 +39,26 @@ const DeliveryDetails = () => {
               <Row className="mb-5">
                 <Form.Group as={Col} controlId="formGridEmail">
                   <Form.Control
-                    type="password"
+                    type="text"
                     placeholder="Enter delivery destination"
                   />
                 </Form.Group>
               </Row>
-
-              <div className="delivery-size mb-5">
-                <Row>
-                  <Col xs={6} md={4} className="small">
-                    <p className="delivery-para">Small</p>
-                  </Col>
-                  <Col xs={6} md={4} className="medium">
-                    <p className="delivery-para">Medium</p>
-                  </Col>
-                  <Col xs={6} md={4} className="large">
-                    <p className="delivery-para">Large</p>
-                  </Col>
-                </Row>
-              </div>
+              <Link>
+                <div className="delivery-size mb-5">
+                  <Row>
+                    <Col xs={6} md={4} className="small">
+                      <p className="delivery-para">Small</p>
+                    </Col>
+                    <Col xs={6} md={4} className="medium">
+                      <p className="delivery-para">Medium</p>
+                    </Col>
+                    <Col xs={6} md={4} className="large">
+                      <p className="delivery-para">Large</p>
+                    </Col>
+                  </Row>
+                </div>
+              </Link>
 
               <div className="delivery-details mb-5">
                 <Row className="mb-3">
@@ -67,7 +70,11 @@ const DeliveryDetails = () => {
                 </Row>
               </div>
 
-              <Button variant="primary" onClick={ RedirectToTracking } className="btn-continue">
+              <Button
+                variant="primary"
+                onClick={RedirectToTracking}
+                className="btn-continue"
+              >
                 Continue
               </Button>
             </Form>
