@@ -25,7 +25,6 @@ const Footer = () => {
           </Col>
           <Col xs={6} md={4}>
             <h6>Subscribe</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <>
               <InputGroup className="mb-3">
                 <FormControl aria-label="DSubscription"  placeholder="Enter Email Address" />
