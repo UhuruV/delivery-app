@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Form,Button,Row } from "react-bootstrap";
+import { Form,Button,Row,Card} from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router";
 
@@ -8,12 +8,14 @@ const Login = () => {
   const history = useHistory();
 
   const RedirectAfterLogin =()=>{
-    history.push('/');
+    history.push('/delivery');
   }
 
-
+ 
   return (
+    <div className="login">
     <div className="login-form">
+       <Card body>
       <Form onSubmit={RedirectAfterLogin}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
@@ -26,7 +28,7 @@ const Login = () => {
         </Form.Group>
     
         <Button variant="primary" type="submit" id="button">
-          Submit
+          Login 
         </Button>
 
         <Form.Group as={Row}>
@@ -35,6 +37,8 @@ const Login = () => {
           </Form.Text>
           </Form.Group>
       </Form>
+      </Card>
+    </div>
     </div>
   );
 };

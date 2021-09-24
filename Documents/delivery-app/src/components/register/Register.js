@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Row, Col, Button } from "react-bootstrap";
+import { Form, Row, Col, Button,Card } from "react-bootstrap";
 import { useHistory } from "react-router";
 
 const Register = () => {
@@ -10,9 +10,11 @@ const Register = () => {
   };
 
   return (
+  <div className="sign-up">
     <div className="sign-up-form">
+      <Card body >
       <Form onSubmit={RedirectAfterRegister}>
-        <Row className="mb-3">
+        <Row className="mb-3" style={{ marginTop: "6%" }}>
           <Form.Group as={Col} controlId="formGridEmail">
             <Form.Label>First Name</Form.Label>
             <Form.Control type="text" placeholder="First Name" />
@@ -38,10 +40,16 @@ const Register = () => {
           </Form.Group>
         </Row>
 
+        <Form.Group className="mb-3" controlId="formBasicCheckbox">
+    <Form.Check type="checkbox" label="Creating an account means you’re okey with Terms of Service,Privacy Policy and our defult Notification Settings." />
+  </Form.Group>
+
         <Button variant="primary" type="submit">
-          Submit
+          Create Account
         </Button>
       </Form>
+      </Card>
+    </div>
     </div>
   );
 };

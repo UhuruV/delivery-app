@@ -1,6 +1,6 @@
 .App {
   text-align: left;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .App-logo {
@@ -14,116 +14,126 @@
   }
 }
 
-.deliver-with-us{
+.deliver-with-us {
   color: #fff;
 }
 
-.cont{
+.cont {
   margin-top: 4%;
-  background-color: #B5A191;
+  background-color: #b5a191;
   padding: 0.8%;
   font-size: 0.9em;
 }
 
-.bg-dark{
-  background-color: #FBA420 !important;
+.bg-dark {
+  background-color: #fba420 !important;
+  padding: 2% !important;
 }
 
-.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-brand{
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-brand {
   color: #fff !important;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover{
+.navbar-dark .navbar-nav .nav-link:hover {
   color: #000 !important;
 }
-.navbar-dark .navbar-nav .nav-link:after{
+.navbar-dark .navbar-nav .nav-link:after {
   color: #000 !important;
 }
 
 /* Homepage */
 
-.destination-input,.about-text{
+.destination-input,
+.about-text {
   width: 40%;
   margin: 15% auto;
 }
 
-.destination-input{
+.destination-input {
   width: 60%;
   margin: 15% auto;
 }
-.pickup-input{
+.pickup-input {
   width: 40%;
   margin: 2% auto;
 }
 
-.home-page-banner{
-  background-image: url(../src/components/home/assests/home-page.png),linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+.home-page-banner {
+  background-image: url(../src/components/home/assests/home-page.png),
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
   /* background: rgba(0, 0, 0, 0.81); */
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.9;
   background-blend-mode: overlay;
+  height: 100vh;
 }
-.element1-home,.element2-home,.element3-home{
+.element1-home,
+.element2-home,
+.element3-home {
   height: 100%;
-  border-radius: 10px;
-  padding: 5%;
-  box-shadow: 10px 10px 5px #000;
+  border-radius: 50px;
+  padding: 8%;
+  /* box-shadow: 10px 10px 5px #000; */
+  color: #fff;
 }
-.element1-home{
-  background-color: aqua;
+.element1-home {
+  background-color: #0a142f;
 }
-.element2-home{
-  background-color: aquamarine;
+.element2-home {
+  background: #ff9900db;
 }
-.element3-home{
-  background-color: cadetblue;
+.element3-home {
+  background-color: #0a142f;
 }
 
-#submit-button{
+/* .homepage-text{
+  width: 40%;
+} */
+
+#submit-button {
   width: 100%;
   padding-top: 0.9375rem !important;
   padding-bottom: 0.9375rem !important;
 }
 
 /* Form */
-.form-control{
+.form-control {
   padding-top: 0.9375rem !important;
   padding-bottom: 0.9375rem !important;
 }
 
-.form-control{
+/* .form-control {
   -webkit-border-radius: 20 !important;
-     -moz-border-radius: 20px !important;
-          border-radius: 20px !important;
-}
-
-
+  -moz-border-radius: 20px !important;
+  border-radius: 20px !important;
+} */
 
 /* Footer */
-.footer{
-  background-color: #0A142F;
+.footer {
+  background-color: #0a142f;
   text-align: left;
   padding-top: 3%;
   color: #fff;
   font-size: 0.75em;
 }
-#footer>p{
+#footer > p {
   font-size: 0.5em;
-} 
+}
 
 /* Nav bar */
-#nav-link-sign-up{
+#nav-link-sign-up {
   padding-top: 0;
   padding-bottom: 0;
 }
-nav.navbar.navbar-expand.navbar-dark.bg-dark.fixed-top{
+nav.navbar.navbar-expand.navbar-dark.bg-dark.fixed-top {
   padding-bottom: 15px;
   padding-bottom: 15px;
 }
 
 /* About section */
-.about{
+.about {
   background-image: url(../src/components/home/assests/good-food.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -132,58 +142,112 @@ nav.navbar.navbar-expand.navbar-dark.bg-dark.fixed-top{
 }
 
 /* about section for mission statement */
-.mission-statement, .vision-statement{
+.mission-statement,
+.vision-statement {
   text-align: left;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
 }
-.about-heading{
+.about-heading {
   font-weight: bold;
 }
-h1{
+h1 {
   font-size: 2.5em;
 }
-.abt-h3{
-  padding-left: 6%;
+.abt-h3 {
+  padding-left: 2%;
 }
-.read-more{
-  margin-left: 8%;
+.read-more {
+  margin-left: 2%;
+  background: #0a142f !important;
+  border-radius: 10px;
+  color: #fff !important;
+  border-color: #0a142f !important ;
+  padding-top: 0.8375rem !important;
+  padding-bottom: 0.8375rem !important;
 }
-#para{
+#para {
   padding-top: 7px !important;
 }
 
-.core-values{
+.core-values {
   width: 48%;
   margin-right: 1.5%;
   padding: 5%;
   margin-bottom: 3%;
-  background-color: #C4C4C4;
+  background: #ffa724;
+  border-radius: 50px;
 }
-
-/* .mission-statement{
-  background-color: #61dafb;
-}
-.vision-statement{
-  background-color: aquamarine;
-} */
 
 /* Login form */
-.login-form, .sign-up-form{
+.login-form,
+.sign-up-form {
   width: 40%;
-  margin: 6% auto;
+  margin: auto;
 }
 
-.btn-primary{
+.btn-primary {
   background-color: #cebb9e !important;
   border-color: #cebb9e !important;
+  padding-top: 0.8375rem !important;
+  padding-bottom: 0.8375rem !important;
 }
 
+/* Sign up */
+.sign-up,
+.login {
+  background-color: #0a142f;
+  height: 100vh;
+}
 
+/* card  */
+.card {
+  top: 100px;
+}
 
+/* delivery component */
+.small, .medium, .large{
+  padding: 0.8%;
+  color: #fff;
+}
+.delivery-para{
+    padding-top: 10px;
+}
+.small{
+  background-color: #0a142f;
+  border-radius: 5px 0 0 5px;
+}
+.medium, .large{
+  background: #ffa724;
+}
+.large{
+  border-radius: 0 5px 5px 0;
+}
+
+.delivery-size{
+  width: 96%;
+  margin: auto;
+}
+.delivery-details{
+  width: 100%;
+  margin: 2% auto;
+  border-radius: 5px;
+  padding: 0.6%;
+  background-color: #E8E8E8;
+}
+
+.btn-continue{
+  background: #ffa724 !important;
+  color: #fff !important;
+  width: 100%;
+}
+
+/* Tracking */
+.delivery{
+  width: 30%;
+  margin: 6% auto;
+}
 .App-link {
   color: #61dafb;
-
-  
 }
 
 @keyframes App-logo-spin {
