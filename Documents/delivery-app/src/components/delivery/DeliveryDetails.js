@@ -1,6 +1,7 @@
 import React from "react";
 import { Form, Row, Col, Button, Card, FormControl } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import * as Icon  from 'react-bootstrap-icons'
 import * as sweetalert from "sweetalert";
 import { useHistory } from "react-router";
 
@@ -32,6 +33,7 @@ const DeliveryDetails = () => {
                     type="text"
                     placeholder="Enter pick up location"
                   />
+                  <i class="glyphicon glyphicon-user form-control-feedback"></i>
                 </Form.Group>
               </Row>
 
