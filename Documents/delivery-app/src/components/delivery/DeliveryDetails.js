@@ -28,7 +28,6 @@ const DeliveryDetails = () => {
             <Form>
               <Row className="mb-5">
                 <Form.Group as={Col} controlId="formGridEmail">
-                  <FormControl.Text></FormControl.Text>
                   <Form.Control
                     type="text"
                     placeholder="Enter pick up location"
