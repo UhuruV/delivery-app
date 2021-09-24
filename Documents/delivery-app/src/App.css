@@ -240,6 +240,12 @@ h1 {
   color: #fff !important;
   width: 100%;
 }
+
+/* Tracking */
+.delivery{
+  width: 30%;
+  margin: 6% auto;
+}
 .App-link {
   color: #61dafb;
 }

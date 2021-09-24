@@ -8,7 +8,7 @@ const Login = () => {
   const history = useHistory();
 
   const RedirectAfterLogin =()=>{
-    history.push('/');
+    history.push('/delivery');
   }
 
  

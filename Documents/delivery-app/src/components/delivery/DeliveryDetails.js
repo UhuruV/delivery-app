@@ -1,16 +1,32 @@
 import React from "react";
 import { Form, Row, Col, Button, Card } from "react-bootstrap";
+import * as sweetalert from 'sweetalert';
+import { useHistory } from "react-router";
 
 const DeliveryDetails = () => {
+    const history = useHistory();
+
+  const onClickContinue = () => {
+    sweetalert({
+      title: "Success",
+      type: "success",
+      text: "Your order has been placed.",
+    });
+  };
+
+  const RedirectToTracking = ()=>{
+      onClickContinue();
+      history.push('/tracking');
+  }
+
   return (
     <div>
       <div className="sign-up">
-        <div className="sign-up-form">
+        <div className="sign-up-form delivery">
           <Card body>
-            <Form>
-              <Row className="mb-3">
+            <Form >
+              <Row className="mb-5">
                 <Form.Group as={Col} controlId="formGridEmail">
-                  {/* <Form.Label>Email</Form.Label> */}
                   <Form.Control
                     type="email"
                     placeholder="Enter pick up location"
@@ -18,9 +34,8 @@ const DeliveryDetails = () => {
                 </Form.Group>
               </Row>
 
-              <Row className="mb-3">
+              <Row className="mb-5">
                 <Form.Group as={Col} controlId="formGridEmail">
-                  {/* <Form.Label>Password</Form.Label> */}
                   <Form.Control
                     type="password"
                     placeholder="Enter delivery destination"
@@ -28,7 +43,7 @@ const DeliveryDetails = () => {
                 </Form.Group>
               </Row>
 
-              <div className="delivery-size">
+              <div className="delivery-size mb-5">
                 <Row>
                   <Col xs={6} md={4} className="small">
                     <p className="delivery-para">Small</p>
@@ -42,17 +57,17 @@ const DeliveryDetails = () => {
                 </Row>
               </div>
 
-              <div className="delivery-details">
+              <div className="delivery-details mb-5">
                 <Row className="mb-3">
                   <Col xs={6}>Bike</Col>
-                  <Col xs={6} style={{ textAlign: "right"}}>
-                      <Col>KES 289</Col>
-                      <Col>Pick up by 3:30pm</Col>
+                  <Col xs={6} style={{ textAlign: "right" }}>
+                    <Col>KES 289</Col>
+                    <Col>Pick up by 3:30pm</Col>
                   </Col>
                 </Row>
               </div>
 
-              <Button variant="primary" type="submit" className="btn-continue">
+              <Button variant="primary" onClick={ RedirectToTracking } className="btn-continue">
                 Continue
               </Button>
             </Form>
