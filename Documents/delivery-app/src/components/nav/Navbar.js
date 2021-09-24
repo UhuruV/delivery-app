@@ -8,12 +8,10 @@ const NavbarComponent = () => {
       <Navbar bg="dark" variant="dark" fixed="top">
         <Container>
           <Navbar.Brand as={ Link } to="/">ValaryBestDelivery</Navbar.Brand>
-          <Nav className="me-auto">
-            <NavLink  as={ Link } to="/">Home</NavLink>
-            <NavLink  as={ Link } to="/about">About Us</NavLink>
-          </Nav>
 
           <Nav>
+          <NavLink  as={ Link } to="/">Home</NavLink>
+            <NavLink  as={ Link } to="/about">About Us</NavLink>
             <Nav.Link  as={ Link } to="/login">Login</Nav.Link>
             <Button variant="warning">
               {" "}
@@ -25,13 +23,6 @@ const NavbarComponent = () => {
           </Nav>
         </Container>
       </Navbar>
-
-  
-        {/* <Row className="cont">
-          <Col>
-            <div className="deliver-with-us">Delivery within Nairobi at an affordable price!</div>
-          </Col>
-        </Row> */}
 
     </>
   );

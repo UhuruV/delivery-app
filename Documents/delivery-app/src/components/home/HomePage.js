@@ -5,25 +5,25 @@ import image from "../../components/home/assests/home-page.png";
 const HomePage = () => {
   return (
     <>
-      <Container fluid className="home-page-banner">
-        <Row>
-          <Col className="banner-col">
-            <div className="destination-input">
-              
-            </div>
-          </Col>
-        </Row>
-      </Container>
+      <Row className="mt-5" style={{ backgroundColor: "#E5E5E5" }}>
+        <Col xs={6} id="homepage-second-div" >
+          <h1 style={{ color:"#0a142f",fontWeight:"bold" }}> Delivery At Your Door <br/>Step!</h1>
+          <h5 style={{ color:"#0a142f" }}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            mollitia,
+          </h5>
+        </Col>
+        <Col xs={6} >
+          {" "}
+          <Image src={image} rounded style={{ width: "100%" }} />
+        </Col>
+      </Row>
 
-      {/* <Container> */}
-        {/* <Row style={{ color:"#000" }}  >
-          <Col className="homepage-text">
-            <h2 style={{ color:"#1E255E" }}>Delivery at your doorstep</h2>
-            <p>Lorem ipsum lorem ipsum ipsum Lorem ipsum lorem ipsum ipsumLorem ipsum </p>
-            <p>Lorem ipsum lorem ipsum ipsum Lorem ipsum</p>
-          </Col>
-          <Col style={{ width:"50%" }}>
-            <Image src={image} rounded style={{ width: "100%" }} />
+      {/* <Container fluid className="home-page-banner"> */}
+
+      {/* <Row>
+          <Col className="banner-col">
+            <div className="destination-input"></div>
           </Col>
         </Row> */}
       {/* </Container> */}
