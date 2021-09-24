@@ -275,6 +275,9 @@ a{
   text-decoration: none;
 }
 
+.input-group-text{
+  background: #ffa724 !important;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

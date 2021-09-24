@@ -1,5 +1,7 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col ,InputGroup,FormControl} from "react-bootstrap";
+import * as Icon  from 'react-bootstrap-icons'
+
 
 const Footer = () => {
   return (
@@ -9,8 +11,9 @@ const Footer = () => {
           <Col xs={6} md={4}>
             <h6>Valary Best Delivery</h6>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing  <br/> elit. Maxime
-              mollitia,<br/> molestiae consequuntur voluptatum laborum!
+              Lorem ipsum dolor sit amet consectetur adipisicing <br /> elit.
+              Maxime mollitia,
+              <br /> molestiae consequuntur voluptatum laborum!
             </p>
             <p>Adress: Karen, Ndege Road</p>
             <p>Phone: +254 723728496</p>
@@ -23,6 +26,14 @@ const Footer = () => {
           <Col xs={6} md={4}>
             <h6>Subscribe</h6>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <>
+              <InputGroup className="mb-3">
+                <FormControl aria-label="DSubscription"  placeholder="Enter Email Address" />
+                <InputGroup.Text>
+                <Icon.ArrowRight/>
+                </InputGroup.Text>
+              </InputGroup>
+            </>
           </Col>
         </Row>
 
