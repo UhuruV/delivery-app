@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Image,Button } from "react-bootstrap";
-import image from "./asset/delivery.jpg";
+import image from "./asset/image.png";
 
 const About = () => {
   return (
@@ -19,8 +19,8 @@ const About = () => {
 
         <Row className="m-5" style={{ textAlign:"left" }}>
         <Col xs={6}>
-          <h3 className="abt-h3">About US</h3>
-            <p className="p-5" id="para">
+          <h3 className="abt-h3 p-3">About US</h3>
+            <p className="p-3" id="para">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               mollitia, molestiae quas vel sint commodi repudiandae consequuntur
               voluptatum laborum numquam blanditiis harum quisquam eius sed odit
@@ -33,7 +33,7 @@ const About = () => {
               laudantium molestias eos sapiente officiis modi at sunt excepturi
               expedita sint?
             </p>
-            <Button variant="warning" type="submit" className="read-more">
+            <Button variant="warning"  className="read-more">
           Read More
         </Button>
           </Col>

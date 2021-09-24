@@ -6,6 +6,7 @@ import Footer from "./components/footer/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./components/login/Login";
 import Register from "./components/register/Register";
+import DeliveryDetails from "./components/delivery/DeliveryDetails";
 
 function App() {
   const LoginContainer = () => {
@@ -24,6 +25,17 @@ function App() {
       </>
     );
   }
+
+
+  const DeliveryContainer =()=>{
+    return (
+      <>
+        <Route path="/delivery" component={ DeliveryDetails }/>
+      </>
+    );
+  }
+
+  
 
   const DefaultContainer = () => {
     return (
@@ -49,6 +61,7 @@ function App() {
           <Route path="/sign-up" component={Register} /> */}
           <Route exact path="/(login)" component={LoginContainer} />
           <Route exact  path="/(sign-up)"component={ SignUpContainer }/>
+          <Route exact  path="/(delivery)"component={ DeliveryContainer }/>
           <Route component={DefaultContainer} />
         </Switch>
       </Router>
